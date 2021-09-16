@@ -25,9 +25,11 @@ body{
 }
 .menu ul{
     display: flex;
+    flex-wrap: wrap;
 }
 .menu li{
     padding: 10px;
+    list-style-type: none;
 }
 .menu ul li a{
     color: white;
@@ -88,9 +90,9 @@ header{
 }
 .invi{
     position: absolute;
-    top: 0px;
+    top: 189px;
+    opacity: 0;
     left: 0;
-    visibility: hidden;
 }
 .scroll{
     position: absolute;
@@ -150,4 +152,64 @@ header{
         top: 30px;
         opacity: 0;
     }
+}
+.status{
+    margin-top: 25px;
+}
+.status h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.por{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    position: relative;
+}
+.por .div{
+    margin: 40px;
+    position: relative;
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.gb{
+    width: 550px;
+    height: 200px;
+}
+.por h3{
+    color: white;
+    position: absolute;
+    top: -30px;
+
+}
+.nivel{
+    background-color: white;
+    width: 2%;
+    height: 5px;
+    border-radius: 15px;
+    opacity: 1;
+    margin-right: 16px ;
+}
+.div h4{
+    color: white;
+    font-size: 10px;
+}
+.infos{
+    margin-bottom: 30px;
+}
+.nivel1{
+    transition: all 3s;
+}
+.nivel2{
+    transition: all 3s ease-in;
+}
+.nivel3{
+    transition: all 3s ease-in-out;
+}
+.nivel4{
+    transition: all 4s ease;
 }
