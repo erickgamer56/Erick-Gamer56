@@ -11,7 +11,7 @@ document.getElementById("disc").addEventListener("click",function(){
     alert("Copiado!!")
 })
 window.addEventListener("scroll",function(){
-    if (document.documentElement.scrollTop >= 300){
+    if (document.documentElement.scrollTop >= 100){
     document.getElementById("div1").style.width="80%"
     document.getElementById("div2").style.width="75%"
     document.getElementById("div3").style.width="25%"
