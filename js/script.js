@@ -24,3 +24,38 @@ window.addEventListener("scroll",function(){
         document.getElementById("div4").style.width=""
     }
 })
+window.addEventListener("load", function(){
+    var n1 = document.getElementById("load")
+    n1.style.opacity="0"
+    this.setTimeout(function(){
+        n1.style.zIndex="-35"
+    }, 500)
+    document.documentElement.scrollTop == "0"
+})
+document.getElementById("inp1").addEventListener("change",function(){
+    var n1 = "" 
+    n1 = document.getElementById("inp1").value
+    if (n1 != ""){
+        document.getElementById("i1").style.top="8px"
+    }else{
+        document.getElementById("i1").style.top=""
+    }
+})
+document.getElementById("inp2").addEventListener("change",function(){
+    var n1 = "" 
+    n1 = document.getElementById("inp2").value
+    if (n1 != ""){
+        document.getElementById("i2").style.top="8px"
+    }else{
+        document.getElementById("i2").style.top=""
+    }
+})
+document.getElementById("inp3").addEventListener("change",function(){
+    var n1 = "" 
+    n1 = document.getElementById("inp3").value
+    if (n1 != ""){
+        document.getElementById("i3").style.top="8px"
+    }else{
+        document.getElementById("i3").style.top=""
+    }
+})

@@ -9,9 +9,12 @@
     <link rel="shortcut icon" href="img/n1.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
-
 </head>
 <body>
+    <div id="load">
+        <div class="spiner1"></div>
+        <div class="spiner2"></div>
+    </div>
     <input type="text" value="erickgamer56#9383" id="copyinp" class="invi">
     <nav class="menu">
         <div><h1>Erick Gamer56</h1></div>
@@ -43,6 +46,12 @@
             <h3>Scroll down</h3>
         </div>
     </header>
+    <section class="infos3">
+        <div class="text1">
+            <h1 style="text-align: center;">Sobre</h1>
+            <p>Olá, Este é um bom exemplo do que eu sei com html,css e js. Para me contratar basta preencher o campo abaixo.</p>
+        </div>
+    </section>
     <section class="infos" id="infos">
         <div class="por">
             <div class="gb">
@@ -68,9 +77,27 @@
                 </div>
             </div>   
         </div>
-        <div class="img4">
-            <img src="img/n1.png" width="100%" height="100%">
-        </div>
+    </section>
+    <section class="contato">
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form">
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="751120e6-8842-499b-9b8b-aa601d9231ef">
+            <input type="hidden" name="redirectTo" value="https://www.github.com/erickgamer56">
+            <h1 style="position: absolute; top: 0; margin-top: 30px;">Contato</h1>
+            <div class="divc">
+                <input type="name" name="name" id="inp1" class="inp inp1">
+                <label for="inp1" class="i1" id="i1">Nome</label>
+            </div>
+            <div class="divc">
+                <input type="email" name="email" class="inp inp2"id="inp2">
+                <label for="inp2" class="i2" id="i2">Email</label>
+            </div>
+            <div class="divc">
+                <input type="text" class="inp inp3" id="inp3" name="message">
+                <label for="inp3" class="i3" id="i3">Menssagem</label>
+            </div>
+            <input type="submit" value="Envivar" class="inp inpo">
+        </form>
     </section>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/b6ad051501.js" crossorigin="anonymous"></script>
