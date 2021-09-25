@@ -1,0 +1,377 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: white;
+}
+body{
+    background-color: #0E0B16;
+    margin-bottom: 60px;
+}
+body::-webkit-scrollbar{
+    background-color: black;
+    width: 3px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(167, 167, 167);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #0f16238e;
+    z-index: 7;
+}
+.menu div{
+    margin: 0 20px;
+}
+.menu h1{
+    color: white;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li{
+    padding: 10px;
+    list-style-type: none;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu ul li a:hover{
+    border-bottom: 1px solid white;
+}
+header{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(../img/inic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.text{
+    margin-top: 60px;
+    position: relative;
+}
+.text h1,p{
+    color: white;
+    font-size: 78px;
+    filter: drop-shadow(0 0 20px #4717F6);
+}
+.text p{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.img1{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 20px #4717F6);
+}
+.btn1{
+    background-color: #4717F6;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 6px;
+    transition: background-color .3s ease;
+}
+.btn1:hover{
+    background-color: rgb(55, 63, 63);
+}
+.redes{
+    position: absolute;
+    left: 130px;
+    top: 144px;
+    z-index: 4;
+
+}
+.fab1{
+    color: white;
+    font-size: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+.invi{
+    position: absolute;
+    top: 189px;
+    opacity: 0;
+    left: 0;
+}
+.scroll{
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+.scroll h3{
+    color: white;
+    margin-left: 5px;
+}
+.sc{
+    width: 25px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.sc::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-left: none;
+    border-top: none;
+    transform: rotate(43deg);
+    margin: auto;
+    top: 0;
+    animation: erick2 infinite ease-in-out 1s;
+    margin: 7px;
+    opacity: 0;
+}
+.sc::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-left: none;
+    border-top: none;
+    transform: rotate(43deg);
+    margin: auto;
+    animation: erick2 infinite ease-in-out 1s;
+    top: -10px;
+    margin: 7px;
+    opacity: 0;
+}
+@keyframes erick2{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        top: 15px;
+        opacity: 0;
+    }
+}
+.status h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.por{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+.por .div{
+    margin: 40px;
+    position: relative;
+    background-color: rgba(150, 150, 150, 0.596);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.gb{
+    width: 584px;
+    height: 200px;
+}
+.por h3{
+    color: white;
+    position: absolute;
+    top: -30px;
+
+}
+.nivel{
+    background-color: white;
+    width: 2%;
+    height: 10px;
+    border-radius: 15px;
+    opacity: 1;
+    margin-right: 6px ;
+    filter: drop-shadow(0 0 5px #4717F6);
+}
+.div h4{
+    color: white;
+    font-size: 10px;
+}
+.nivel1{
+    transition: all 3s;
+}
+.nivel2{
+    transition: all 3s ease-in;
+}
+.nivel3{
+    transition: all 3s ease-in-out;
+}
+.nivel4{
+    transition: all 4s ease;
+}
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos3{
+    display: flex;
+    margin: 0 60px;
+    justify-content: center;
+    align-items: center;
+}
+.text1{
+    margin-top: 60px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
+.text1 h1{
+    color: white;
+    font-size: 46px;
+    color: #3700ff;
+    margin-bottom: 20px;
+}
+.text1 p {
+    font-size: 23px;
+    color: #3700ff;
+    filter: none;
+    max-width: 500px;
+}
+.img5{
+    width: 450px;
+    height: 250px;
+}
+#load{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #0E0B16;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .6s ease;
+}
+.spiner1{
+    width: 90px;
+    height: 90px;
+    border: 20px solid #4717F6;
+    border-top: 20px solid #0e0b1600;
+    border-right: 20px solid #0e0b1600;
+    animation: load infinite  3s linear;
+    position: absolute;
+    z-index: 3;
+    border-radius: 50%;
+}
+.spiner2{
+    width: 90px;
+    height: 90px;
+    border: 20px solid #271d42;
+    border-radius: 50%;
+    position: absolute;
+}
+@keyframes load {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes load1 {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 60px;
+}
+.form{
+    background-image: url(../img/inic.jpg);
+    background-size: cover;
+    width: 94%;
+    height: 500px;
+    display: flex;
+    flex-direction:column;
+    border-radius: 120px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    position: relative;
+    border: 1px solid #3700ff;
+}
+.inp{
+    outline: none;
+    border: 1px solid #3700ff;
+    background-color: transparent;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 6px;
+    margin: 15px;
+    width: 100%;
+    padding-left:23px ;
+}
+.i1{
+    position: absolute;
+    top: 37px;
+    left: 40px;
+    transition: top .6s ease;
+}
+.i2{
+    position: absolute;
+    top: 37px;
+    left: 40px;
+    transition: top .6s ease;
+}
+.i3{
+    position: absolute;
+    top: 37px;
+    left: 40px;
+    transition: top .6s ease;
+}
+.inp1:focus ~ .i1{
+    top: 8px;
+}
+.inp2:focus ~ .i2{
+    top: 8px;
+}
+.inp3:focus ~ .i3{
+    top: 8px;
+}
+.divc{
+    position: relative;
+    width: 450px;
+    display: flex;
+}
+.inpo{
+    width: 200px;
+    padding: 0;
+    border: 1px solid #3700ff;
+    margin-top: 30px;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+}
